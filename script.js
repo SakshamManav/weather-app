@@ -21,7 +21,7 @@ async function weather(city){
 	condition.innerHTML = data.current.condition.text;
 	feels.innerHTML = "Feels like " + Math.round(data.current.feelslike_c);
 	temp.innerHTML = Math.round(data.current.temp_c); + "°C";
-	humidity.innerHTML = data.current.condition.text;
+	humidity.innerHTML = data.current.humidity + "%";
 	wind.innerHTML = data.current.wind_kph + "Km/h";
 }
 
