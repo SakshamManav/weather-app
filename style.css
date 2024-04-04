@@ -1,7 +1,8 @@
 *{
     margin:0px;
 }
-body{
+
+.anothercontainer{
     color:white;
     background-color:#004953 ;
     position: absolute;
@@ -65,6 +66,7 @@ body{
    
     font-size: 20px;
     min-width:18vh;
+    max-width:100vh;
     height:5vh;
     border:none;
     border-bottom: 2px solid black;
@@ -127,7 +129,7 @@ body{
 
 
 
-@media screen and (max-width:380px){
+@media screen and (max-width:450px){
     .container{
         height:40vh;
         width:30vh;
