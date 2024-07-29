@@ -104,6 +104,7 @@ body{
 }
 .fa-droplet,.fa-wind{
     font-size: 20px;
+   
 }
 .humidity-word,.wind-word{
     font-size: 18px;
@@ -112,10 +113,30 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
+.spinner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    /* margin: 1px auto; */
+    width: 40px;
+    height: 40px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid red;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+  }
 
-
-
-
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 @media screen and (max-width:450px){
     .container{
